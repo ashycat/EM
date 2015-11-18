@@ -7,7 +7,7 @@ define(['angular',
         // 'interceptors/http',
         'controllers/common',
         // 'services/restapi',
-        // 'directives/common',
+        'directives/common',
         // 'modules/route-resolver'
         ],
         function(angular, app

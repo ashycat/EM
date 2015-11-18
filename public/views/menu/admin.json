@@ -5,19 +5,28 @@
    path: 'admin/dashboard',
    roles: ['admin'],
    visible:true,
-   deps: [
-         ],
    desc : 'admin'
  },
  {
-   name: '대쉬보드',
-   url: '/dashboard',
-   path: 'admin/dashboard',
+   name: '배치',
+   path: 'admin/batch',
    roles: ['admin'],
    visible:true,
-   deps: [
-         ],
+   sub: [
+     {
+     name: '배치로그',
+     url: '/admin/batch/batchlog',
+     path: 'admin/batch/batchlog',
+     roles: [],
+     visible:true,
+     deps: [
+            'controllers/admin/batch/batchlogController'
+           ],
+     desc : '관리자'
+     }
+   ],
    desc : 'admin'
  }
+
 
 ]

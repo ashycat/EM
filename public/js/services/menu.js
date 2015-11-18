@@ -24,7 +24,7 @@ define(['angular', 'app', 'services/menuloader'], function(angular, app, loader)
             (ok || angular.noop)(loaded);
         }
     }
-    
+
     function matchPath(item) {
         if (item.url && angular.isDefined(item.matcher)) {
             return item.matcher.exec($location.path(), $location.search());
@@ -32,7 +32,7 @@ define(['angular', 'app', 'services/menuloader'], function(angular, app, loader)
             return false;
         }
     }
-    
+
     function findMenuItem(id) {
         var menuItems = loaded;
         var item;
@@ -48,6 +48,7 @@ define(['angular', 'app', 'services/menuloader'], function(angular, app, loader)
             return false;
         }
         var matched = matchPath(menuItem);
+
         if (!matched && withSub && angular.isArray(menuItem.sub)) {
             for (var i = 0; i < menuItem.sub.length; i++) {
                 if (match(menuItem.sub[i].id, withSub)) {
@@ -57,7 +58,7 @@ define(['angular', 'app', 'services/menuloader'], function(angular, app, loader)
         }
         return matched;
     }
-    
+
     function currentPath(ok, fail) {
         function matchingItem(items) {
             for (var i = 0; i < items.length; i++) {
@@ -88,7 +89,7 @@ define(['angular', 'app', 'services/menuloader'], function(angular, app, loader)
             }
         }, fail);
     }
-    
+
     return {
         get: load,
         match: match,
