@@ -8,16 +8,73 @@
    desc : 'admin'
  },
  {
+   name: '원장',
+   path: 'admin/base',
+   visible:true,
+   sub: [
+     {
+     name: 'IM(퇴직자 미포함)원장',
+     url: '/admin/base/imuser',
+     path: 'admin/base/imuser',
+     visible:true,
+     deps: [
+            'controllers/admin/base/imuserController'
+           ],
+     desc : '관리자'
+     },
+     {
+     name: 'IM(퇴직자 포함)원장',
+     url: '/admin/base/imuser',
+     path: 'admin/base/imuser',
+     visible:true,
+     deps: [
+            'controllers/admin/base/imuserController'
+           ],
+     desc : '관리자'
+     },
+     {
+     name: 'AD 원장',
+     url: '/admin/base/imuser',
+     path: 'admin/base/imuser',
+     visible:true,
+     deps: [
+            'controllers/admin/base/imuserController'
+           ],
+     desc : '관리자'
+     },
+     {
+     name: 'HW 원장',
+     url: '/admin/base/imuser',
+     path: 'admin/base/imuser',
+     visible:true,
+     deps: [
+            'controllers/admin/base/imuserController'
+           ],
+     desc : '관리자'
+     },
+     {
+     name: 'HW Device 원장',
+     url: '/admin/base/imuser',
+     path: 'admin/base/imuser',
+     visible:true,
+     deps: [
+            'controllers/admin/base/imuserController'
+           ],
+     desc : '관리자'
+     }
+
+   ],
+   desc : 'admin'
+ },
+ {
    name: '배치',
    path: 'admin/batch',
-   roles: ['admin'],
    visible:true,
    sub: [
      {
      name: '배치로그',
      url: '/admin/batch/batchlog',
      path: 'admin/batch/batchlog',
-     roles: [],
      visible:true,
      deps: [
             'controllers/admin/batch/batchlogController'
@@ -26,7 +83,8 @@
      }
    ],
    desc : 'admin'
- }
+ },
+
 
 
 ]

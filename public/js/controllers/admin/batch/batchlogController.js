@@ -12,6 +12,6 @@ define(['app' ], function(app){
         function ($scope) {
           console.log('admin batchlogController');
 
-
+          $scope.num = 11;
   }]);
 });
