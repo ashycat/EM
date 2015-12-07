@@ -24,41 +24,41 @@
      },
      {
      name: 'IM(퇴직자 포함)원장',
-     url: '/admin/base/imuser',
-     path: 'admin/base/imuser',
+     url: '/admin/base/imbatch',
+     path: 'admin/base/imbatch',
      visible:true,
      deps: [
-            'controllers/admin/base/imuserController'
+            'controllers/admin/base/imbatchController'
            ],
      desc : '관리자'
      },
      {
      name: 'AD 원장',
-     url: '/admin/base/imuser',
-     path: 'admin/base/imuser',
+     url: '/admin/base/aduser',
+     path: 'admin/base/aduser',
      visible:true,
      deps: [
-            'controllers/admin/base/imuserController'
+            'controllers/admin/base/aduserController'
            ],
      desc : '관리자'
      },
      {
      name: 'HW 원장',
-     url: '/admin/base/imuser',
-     path: 'admin/base/imuser',
+     url: '/admin/base/hwuser',
+     path: 'admin/base/hwuser',
      visible:true,
      deps: [
-            'controllers/admin/base/imuserController'
+            'controllers/admin/base/hwuserController'
            ],
      desc : '관리자'
      },
      {
      name: 'HW Device 원장',
-     url: '/admin/base/imuser',
-     path: 'admin/base/imuser',
+     url: '/admin/base/hwdevice',
+     path: 'admin/base/hwdevice',
      visible:true,
      deps: [
-            'controllers/admin/base/imuserController'
+            'controllers/admin/base/hwdeviceController'
            ],
      desc : '관리자'
      }
