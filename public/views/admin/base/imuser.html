@@ -8,28 +8,29 @@
 <div id="wrapper">
   <div id="page-wrapper">
       <div class="row">
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-primary">
+        <h1 class="page-header"> IM 사용자 원장(퇴직자 제외)</h1>
+        <div class="col-lg-12">
+            <div class="panel panel-default">
                 <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-3 text-left">
-                            <div class="huge">IM</div>
-                        </div>
-                        <div class="col-xs-9 text-right">
-                            <div class="huge">[[num]]</div>
-                            <div>New Comments!</div>
-                        </div>
-                    </div>
+                    IM 사용자 원장(퇴직자 제외) BATCH 실행정보
                 </div>
-                <a href="#">
-                    <div class="panel-footer">
-                        <span class="pull-left">View Details</span>
-                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                        <div class="clearfix"></div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label>IM 사용자 정보</label>
+                                    <p class="form-control-static">이 데이터는 매일 오전 6:00를 기준으로 IM과 동기화 됩니다. </p>
+                                </div>
+                                <button class="btn btn-default" ng-click="startIMUser()">[[btnIMUser]]</button>
+                        </div>
                     </div>
-                </a>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.panel-body -->
             </div>
+            <!-- /.panel -->
         </div>
+
           <!-- /.col-lg-12 -->
       </div>
       <!-- /.row -->

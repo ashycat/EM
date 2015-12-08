@@ -6,5 +6,13 @@ define(['app' ], function(app){
         function ($scope) {
           console.log('admin imuserController');
 
+          $scope.startIMUser = function() {
+            if($scope.btnIMUser === 'Stop'){
+              $scope.btnIMUser = 'Start' ;
+            }
+
+
+          }
+
   }]);
 });
