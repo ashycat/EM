@@ -1,10 +1,10 @@
 {
-  "name": "EM",
+  "name": "iers",
   "version": "1.0.0",
   "authors": [
-    "Damian Dudziak - WebAppLayers"
+    "Jeong su-chang, Lee jun-woo"
   ],
-  "description": "EM",
+  "description": "iers",
   "main": "app/index.html",
   "private": true,
   "ignore": [
